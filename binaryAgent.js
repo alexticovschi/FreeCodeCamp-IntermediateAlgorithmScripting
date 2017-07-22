@@ -2,15 +2,13 @@ function binaryAgent(str) {
 // convert the string into an array of binary digits
 //  var binary = str.split(' ');
 //   var digits = [];
-  
 //   binary.map(function(nums) {
 //     digits.push(parseInt(nums, 2));
 //   });
-  
 //   return digits.map(function(digit) {
 //     return String.fromCharCode(digit);
 //   }).join('');
-  //console.log(binary);
+//console.log(binary);
   
   // convert the string into an array of binary digits
   var binary = str.split(' ');
