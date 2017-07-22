@@ -1,6 +1,6 @@
 function binaryAgent(str) {
-  // convert the string into an array of binary digits
-  var binary = str.split(' ');
+// convert the string into an array of binary digits
+//  var binary = str.split(' ');
 //   var digits = [];
   
 //   binary.map(function(nums) {
@@ -11,6 +11,9 @@ function binaryAgent(str) {
 //     return String.fromCharCode(digit);
 //   }).join('');
   //console.log(binary);
+  
+  // convert the string into an array of binary digits
+  var binary = str.split(' ');
   
   // iterate over the array, convert every 'binary' string into a decimal using the parseInt() method
   // then convert every ASCII number(decimal) into a letter and return the string using the join() method
