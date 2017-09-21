@@ -1,7 +1,7 @@
 
 function spinalCase(str) {
-  // replace all non alpha numeric characters with empty space, add a space before every uppercase       // character, trim off the leading and trailing spaces and then replace multiple spaces with a 
-  // single space
+  // replace all non alpha numeric characters with empty space, add a space before every uppercase       
+  // character, trim off the leading and trailing spaces and then replace multiple spaces with a single space
   str = str.replace(/[\W_]+/g," ").replace(/([A-Z])/g, ' $1').trim().replace(/  +/g, ' ');
   // regex that matches empty spaces
   var patt1 = /\s/g;
