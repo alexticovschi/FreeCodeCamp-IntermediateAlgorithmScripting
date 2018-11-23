@@ -26,4 +26,18 @@ function diffArray2(arr1, arr2) {
   return newArr.filter((val) => arr1.indexOf(val) === -1 || arr2.indexOf(val) === -1);
 }
 
+/* Third Solution */
+function diffArray3(arr1, arr2) {
+  let arr = arr1.concat(arr2);
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr1.indexOf(arr[i]) === -1 || arr2.indexOf(arr[i]) === -1) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+
+
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
