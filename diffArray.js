@@ -1,3 +1,4 @@
+/* First Solution */ 
 function diffArray(arr1, arr2) {
     var newArr = [];              
     // Use map() method to check if the values of arr1 are found in arr2
@@ -16,7 +17,13 @@ function diffArray(arr1, arr2) {
  });
   
  return newArr;
+}
 
+/* Second Solution */
+function diffArray2(arr1, arr2) {
+  var newArr = arr1.concat(arr2);
+  
+  return newArr.filter((val) => arr1.indexOf(val) === -1 || arr2.indexOf(val) === -1);
 }
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
