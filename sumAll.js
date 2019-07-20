@@ -6,6 +6,23 @@
 
 
 
+/* Third Solution */
+
+function sumAll(arr) {
+  const min = Math.min(arr[0], arr[1]);
+  const max = Math.max(arr[0], arr[1]);
+
+  let total = 0;
+
+  for (let i = min; i <= max; i++) {
+      total += i;
+  }
+
+  return total;
+}
+
+/********************************************************************************/
+
 /* Second Solution */
 
 function sumAll(arr) {
@@ -20,9 +37,8 @@ function sumAll(arr) {
   return total;
 }
 
-sumAll([1, 4]);
 
-
+/********************************************************************************/
 
 
 /* First Solution */
