@@ -1,3 +1,31 @@
+/*** Sum All Numbers in a Range ***/
+
+// We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them.
+
+// The lowest number will not always come first.
+
+
+
+/* Second Solution */
+
+function sumAll(arr) {
+  const sortedArray = arr.sort((a,b) => a - b);
+  const lastNum = sortedArray[sortedArray.length-1];
+  let total = 0;
+
+  for (let i = sortedArray[0]; i <= lastNum; i++) {
+      total += i;
+  }
+
+  return total;
+}
+
+sumAll([1, 4]);
+
+
+
+
+/* First Solution */
 
 function sumAll(arr) {
   // create an empty array  
